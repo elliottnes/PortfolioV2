@@ -1,0 +1,235 @@
+h1 {
+  font-family: 'Bungee Inline', cursive;
+  font-size: 100px;
+  color: black;
+}
+
+h5, h6 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 14px
+}
+
+h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 22px
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #AC09BC;
+}
+
+h1.alt {
+  font-family: 'Bungee inline', cursive;
+  color: white;
+  font-size: 26px
+}
+
+.footerbox {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px 0px;
+  background: #EEEEEE;
+}
+
+h1.footer {
+  font-family: 'Bungee inline', cursive;
+  color: black;
+  font-size: 26px;
+  text-align: center;
+}
+
+p.footer {
+  text-align: center;
+}
+
+.copyright {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-size: 11px;
+}
+
+/* NOTE: Header/Nav */
+.header {
+  width: 100%;
+  text-align: right;
+  position: relative;
+}
+
+.page-title {
+  position: absolute;
+  top: -15;
+  left: 0;
+}
+
+@media (min-width: 30em) and (max-width: 50em) {
+  h1 {
+    font-size: 60px
+  }
+}
+
+@media (min-width: 50em) and (max-width: 68.75em) {
+  h1 {
+    font-size: 80px
+  }
+}
+
+.link {
+  font-family: 'Libre Baskerville', serif;
+  display: inline-block;
+  padding: 15px 0;
+  margin: 15px 25px;
+  position: relative;
+  text-decoration: none;
+  color: #0f0f0f;
+  font-size: 20px;
+}
+
+.link:hover {
+  transform: translateY(-3px);
+  transition-timing-function: cubic-bezier(.17, .67, .55, .97);
+}
+
+/* NOTE: CONTACT DROPDOWN */
+.aboutimg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#links {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 16px;
+  font-family: 'Libre Baskerville', serif;
+  color: #f1f1f1;
+}
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 3;
+  /* Sit on top */
+  left: 0;
+  bottom: 0;
+  background-color: #2C2C2C;
+  /* Black fallback color */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 12%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  font-family: 'Libre Baskerville', serif;
+  color: #f1f1f1;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+.overlay h6 {
+  font-size: 16px;
+  font-family: 'Libre Baskerville', serif;
+  color: #878787;
+}
+
+.overlay a:hover, #links:hover {
+  color: #AC09BC;
+}
+
+.overlay p {
+  font-size: 16px;
+  font-family: 'Libre Baskerville', serif;
+  color: #f1f1f1;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  font-family: 'Bungee Inline', cursive;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* NOTE:
+.link>.bar {
+  width: 100%;
+  display: inline-block;
+  border-bottom: 2px solid black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 300ms;
+}
+
+.link, .link>.bar:hover {
+  opacity: 1;
+  bottom: 5px;
+}
+*/
+/* NOTE: Content CSS  */
+#top-margin {
+  margin-top: 20px;
+}
+
+#footer-margin {
+  margin-top: 40px;
+}
+
+#muraltext {
+  margin-top: -12px;
+}
+
+.date {
+  text-align: right;
+}
+
+.muralheight {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  margin-top: 20px;
+}

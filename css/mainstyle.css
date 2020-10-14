@@ -4,6 +4,10 @@ h1 {
   color: black;
 }
 
+#white {
+  color: white;
+}
+
 h5, h6 {
   font-family: 'Libre Baskerville', serif;
 }
@@ -36,7 +40,7 @@ h1.alt {
   border: 1px solid black;
   margin: 10px;
   padding: 10px 0px;
-  background: #EEEEEE;
+  background: white;
 }
 
 h1.footer {
@@ -69,16 +73,111 @@ p.footer {
   left: 0;
 }
 
-@media (min-width: 30em) and (max-width: 50em) {
-  h1 {
-    font-size: 60px
-  }
+.menu-burger {
+  display: none
 }
 
 @media (min-width: 50em) and (max-width: 68.75em) {
   h1 {
     font-size: 80px
   }
+}
+
+@media (max-width: 50em) {
+  h1 {
+    font-size: 60px
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-burger {
+    display: inline;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 2;
+  }
+
+  .sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 8;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #2C2C2C;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    transition-timing-function: cubic-bezier(1, .42, .71, 1);
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 12%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+
+  .overlay-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Libre Baskerville', serif;
+    color: #f1f1f1;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+  }
+
+  .overlay-content h6 {
+    font-size: 10px;
+    font-family: 'Libre Baskerville', serif;
+    color: #878787;
+  }
+
+  .overlay-content a:hover, #links:hover {
+    color: #AC09BC;
+  }
+
+  .overlay-content p {
+    font-size: 16px;
+    font-family: 'Libre Baskerville', serif;
+    color: #f1f1f1;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .closebtn {
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 30px;
+    font-family: 'Bungee Inline', cursive;
+    color: #f1f1f1;
+  }
+
+  #mobile-top {
+    margin-top: 70px;
+  }
+}
+
+#mobile-top {
+  margin-top: 50px;
 }
 
 .link {
@@ -193,26 +292,8 @@ p.footer {
   }
 }
 
-/* NOTE:
-.link>.bar {
-  width: 100%;
-  display: inline-block;
-  border-bottom: 2px solid black;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  transition: all 300ms;
-}
-
-.link, .link>.bar:hover {
-  opacity: 1;
-  bottom: 5px;
-}
-*/
-/* NOTE: Content CSS  */
 #top-margin {
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 #footer-margin {
@@ -227,9 +308,26 @@ p.footer {
   text-align: right;
 }
 
+.bg-black {
+  background-color: #363636
+}
+
 .muralheight {
   width: 100%;
   height: 450px;
   object-fit: cover;
   margin-top: 20px;
+}
+
+.posterheight {
+  width: 100%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.zineheight {
+  width: 100%;
+  object-fit: cover;
+  margin-top: 20px;
+  border: 1px black solid
 }

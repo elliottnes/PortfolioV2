@@ -72,8 +72,20 @@
   width: 25%;
 }
 
+.bit-4percent {
+  width: 4%;
+}
+
 .bit-125 {
   width: 12.5%;
+}
+
+.bit-15 {
+  width: 15%;
+}
+
+.bit-33 {
+  width: 33%;
 }
 
 .bit-40 {
@@ -146,6 +158,14 @@
   .bit-10,
   .bit-12 {
     width: 50%;
+  }
+
+  .bit-33 {
+    width: 48%
+  }
+
+  .bit-15 {
+    width: 0%
   }
 
   .bit-40,

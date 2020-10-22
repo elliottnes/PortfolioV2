@@ -10,6 +10,8 @@
 
 
   <!-- NOTE: CSS -->
+  <link rel="stylesheet" href="css/zinestyle.css" />
+
   <link rel="stylesheet" href="css/mainstyle.css">
   <link rel="stylesheet" href="css/lemonade.css">
   <link rel="stylesheet" href="css/aos.css" />
@@ -34,9 +36,9 @@
 
   <!-- NOTE: NAV BAR -->
   <div class="header frame">
-    <h1 class="page-title" id="white">ZINE</h1>
+    <h1 class="page-title" id="white">ZINES</h1>
     <div class="menu">
-      <a href="index.html" class="link">
+      <a href="index.html" class="link" id="linkzine">
         <div>Home</div>
         <div class="bar"></div>
       </a>
@@ -55,8 +57,9 @@
           <H6>GRAPHIC DESIGN</H6>
           <a href="zine.html">ZINES</a>
           <a href="poster.html">POSTERS</a>
+          <!-- NOTE:
           <H6>WEB DEV</H6>
-          <a href="website.html">WEBSITES</a>
+          <a href="website.html">WEBSITES</a> -->
         </div>
 
       </div>
@@ -65,7 +68,7 @@
       <h5 class="work" onclick="openNav()">WORK</h5> -->
 
       <a href="#" class="link">
-        <div onclick="openNav()">Work</div>
+        <div onclick="openNav()" id="linkzine">Work</div>
         <div class="bar"></div>
       </a>
 
@@ -87,13 +90,18 @@
               “With my paintings I explore the concepts of self developement, understanding that we are all in one form or another, coming together, or falling apart, often both at the same time.”
             </p><br /><br /><br />
             <p>
+
+              <div id="emailaddress">
+                elliottnes1 (at) gmail (dot) com </div>
+              <a href="behance.net/elliottnes1" id="links">BEHANCE.COM/ELLIOTTNES1</a>
+              <a href="instagram.com/elliotnes1" id="links">INSTAGRAM.COM/ELLIOTTNES1</a><br />
+            </p>
+            <img src="images/about.jpg" class="aboutimg"><br />
+            <p>
               I have been cutting and painting stencils for 10 years. After years of changing styles, my paintings are made from sharp lines and broken images. Influenced by living in the city and interacting with people from all walks of life, I
               appreciate things that aren’t perfect but still hold together. Combined with my love of graffiti I strive to to reflect the beauty in the city’s dark and gritty corners - to me that dichotomy is what makes a place
               authentic.</br></br>
-              <a href="#" id="links">BEHANCE.COM/ELLIOTTNES1</a>
-              <a href="#" id="links">INSTAGRAM.COM/ELLIOTTNES1</a><br />
             </p>
-            <img src="images/about.jpg" class="aboutimg"><br /><br />
             <h1 class="alt">Exhibitions</h1><br />
             <p>
               2020 Mural - Mid-Wilshire - Los Angeles, CA <br />
@@ -111,9 +119,9 @@
             <br />
             <h1 class="alt">Collections</h1><br />
             <p>
-              Private Collection - Seattle WA<br />
-              Private Collection - San Francisco CA<br />
-              Private Collection - Los Angeles CA
+              Private Collection - Seattle, WA<br />
+              Private Collection - San Francisco, CA<br />
+              Private Collection - Los Angeles, CA
             </p>
             <br /><br />
 
@@ -125,7 +133,7 @@
 
       <!-- NOTE:   <h5 class="about" onclick="openNav1()">ABOUT</h5>-->
       <a href="#" class="link">
-        <div onclick="openNav1()">Contact</div>
+        <div onclick="openNav1()" id="linkzine">Contact</div>
         <div class="bar"></div>
       </a>
 
@@ -144,8 +152,9 @@
           <H6>GRAPHIC DESIGN</H6>
           <a href="zine.html">ZINES</a>
           <a href="poster.html">POSTERS</a>
+          <!-- NOTE:
           <H6>WEB DEV</H6>
-          <a href="website.html">WEBSITES</a>
+          <a href="website.html">WEBSITES</a> -->
           <br />
           <br />
           <a href="contact.html">CONTACT</a>
@@ -155,7 +164,7 @@
       </div>
       <div>
         <!-- Use any element to open the sidenav -->
-        <p style="cursor:pointer;font-size:30px;" class="menu-burger" onclick="openNav3()">&#9776;
+        <p style="cursor:pointer;font-size:30px;color:white;" class="menu-burger" onclick="openNav3()">&#9776;
         </p>
       </div>
     </div>
@@ -166,12 +175,15 @@
   <div class="frame" id="top-margin">
     <div class="bit-3">
       <img src="images/zines/Vol 3 First Things First_Page_1.jpg" alt="" class="zineheight">
+      <p style="color:white; text-align:right;">
+        First Things First - Vol 3 (2019)
+      </p>
     </div>
-    <div class="bit-3">
+    <div class="bit-3-zine-page">
       <img src="images/zines/Vol 3 First Things First_Page_2.jpg" alt="" class="zineheight">
       <img src="images/zines/Vol 3 First Things First_Page_5.jpg" alt="" class="zineheight">
     </div>
-    <div class="bit-3">
+    <div class="bit-3-zine-page">
       <img src="images/zines/Vol 3 First Things First_Page_4.jpg" alt="" class="zineheight">
       <img src="images/zines/Vol 3 First Things First_Page_8.jpg" alt="" class="zineheight">
     </div>
@@ -180,12 +192,15 @@
   <div class="frame" id="top-margin">
     <div class="bit-3">
       <img src="images/zines/Vol 2_Page_1.jpg" alt="" class="zineheight">
+      <p style="color:white; text-align:right;">
+        First Things First - Vol 2 (2018)
+      </p>
     </div>
-    <div class="bit-3">
+    <div class="bit-3-zine-page">
       <img src="images/zines/Vol 2_Page_2.jpg" alt="" class="zineheight">
       <img src="images/zines/Vol 2_Page_6.jpg" alt="" class="zineheight">
     </div>
-    <div class="bit-3">
+    <div class="bit-3-zine-page">
       <img src="images/zines/Vol 2_Page_5.jpg" alt="" class="zineheight">
       <img src="images/zines/Vol 2_Page_7.jpg" alt="" class="zineheight">
     </div>
@@ -195,12 +210,15 @@
   <div class="frame" id="top-margin">
     <div class="bit-3">
       <img src="images/zines/Vol 1 2017 _Page_1.jpg" alt="" class="zineheight">
+      <p style="color:white; text-align:right;">
+        First Things First - Vol 1 (2018)
+      </p>
     </div>
-    <div class="bit-3">
+    <div class="bit-3-zine-page">
       <img src="images/zines/Vol 1 2017 _Page_5.jpg" alt="" class="zineheight">
       <img src="images/zines/Vol 1 2017 _Page_7.jpg" alt="" class="zineheight">
     </div>
-    <div class="bit-3">
+    <div class="bit-3-zine-page">
       <img src="images/zines/Vol 1 2017 _Page_6.jpg" alt="" class="zineheight">
       <img src="images/zines/Vol 1 2017 _Page_8.jpg" alt="" class="zineheight">
     </div>
@@ -234,7 +252,7 @@
 
 
       <div class="bit-1">
-        <p class="footer copyright">
+        <p class="footer copyright" style="color:white;">
           This website was designed and coded by Elliott Nes. Los Angeles, CA &copy; 2020
         </p>
 

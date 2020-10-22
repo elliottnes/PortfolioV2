@@ -36,6 +36,12 @@ h1.alt {
   font-size: 26px
 }
 
+h1.contact {
+  font-family: 'Bungee inline', cursive;
+  font-size: 26px;
+  text-align: center;
+}
+
 .footerbox {
   border: 1px solid black;
   margin: 10px;
@@ -131,6 +137,16 @@ p.footer {
     /* 30px top margin to avoid conflict with the close button on smaller screens */
   }
 
+  .email {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Libre Baskerville', serif;
+    color: #f1f1f1;
+    display: block;
+    text-align: center;
+  }
+
   .overlay-content a {
     padding: 8px;
     text-decoration: none;
@@ -191,7 +207,16 @@ p.footer {
   font-size: 20px;
 }
 
+#linkzine {
+  color: white;
+}
+
 .link:hover {
+  transform: translateY(-3px);
+  transition-timing-function: cubic-bezier(.17, .67, .55, .97);
+}
+
+#linkzine:hover {
   transform: translateY(-3px);
   transition-timing-function: cubic-bezier(.17, .67, .55, .97);
 }
@@ -209,6 +234,28 @@ p.footer {
   font-size: 16px;
   font-family: 'Libre Baskerville', serif;
   color: #f1f1f1;
+}
+
+#links-contact {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 16px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#emailaddress {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Libre Baskerville', serif;
+  color: #f1f1f1;
+  padding: 8px;
+}
+
+#emailaddresscontact {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Libre Baskerville', serif;
+  padding: 8px;
 }
 
 .overlay {
@@ -260,7 +307,10 @@ p.footer {
   color: #878787;
 }
 
-.overlay a:hover, #links:hover {
+.overlay a:hover, #links:hover, #linkzine:hover,
+#links-contact:hover;
+
+  {
   color: #AC09BC;
 }
 
@@ -309,7 +359,7 @@ p.footer {
 }
 
 .bg-black {
-  background-color: #363636
+  background-color: #1C1C1C
 }
 
 .muralheight {

@@ -349,3 +349,11 @@ h1.alt {
   height: 450px;
   object-fit: cover;
 }
+
+#emailaddress {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Libre Baskerville', serif;
+  color: #f1f1f1;
+  padding: 8px;
+}

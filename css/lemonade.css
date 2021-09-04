@@ -44,6 +44,10 @@
   width: 20%;
 }
 
+.bit-50 {
+  width: 20%;
+}
+
 .bit-6 {
   width: 16.66667%;
 }
@@ -129,6 +133,11 @@
     width: 100%;
   }
 
+  .bit-40,
+  .bit-50 {
+    width: 33%;
+  }
+
   .bit-6 {
     width: 100%;
   }
@@ -156,6 +165,14 @@
   .bit-12 {
     width: 100%;
   }
+
+  .bit-33 {
+    width: 48%
+  }
+
+  .bit-15 {
+    width: 0%
+  }
 }
 
 @media (min-width: 30em) and (max-width: 50em) {
@@ -177,7 +194,7 @@
   }
 
   .bit-40,
-  .bit-5 {
+  .bit-50 {
     width: 33%;
   }
 
@@ -200,6 +217,10 @@
   .bit-2,
   .bit-7 {
     width: 100%;
+  }
+
+  .bit-50 {
+    width: 20%;
   }
 
   .bit-4,

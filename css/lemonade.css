@@ -128,7 +128,9 @@
   .bit-4 {
     width: 100%;
   }
-
+  .bit-4percent {
+    width: 0%;
+  }
   .bit-5 {
     width: 100%;
   }
@@ -167,7 +169,7 @@
   }
 
   .bit-33 {
-    width: 48%
+    width: 46%
   }
 
   .bit-15 {
